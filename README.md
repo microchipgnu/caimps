@@ -2,7 +2,9 @@
 
 # CAIMPS: Canonical AI Model and Provider Naming System
 
-CAIMPS stands for Canonical AI Model and Provider Naming System. It's a framework designed to standardize how we name AI models and their providers, making it easier for everyone to find, use, and integrate these models across different platforms. Inspired by systems like DNS (Domain Name System), OpenRouter, and blockchain naming conventions, CAIMPS ensures that every AI model has a unique and easily discoverable name.
+CAIMPS stands for Canonical AI Model and Provider Naming System. It is designed to standardize how we name AI models and their providers, making it easier for everyone to find, use, and integrate these models across different platforms. 
+
+Inspired by systems like DNS (Domain Name System), OpenRouter, and blockchain naming conventions, CAIMPS ensures that every AI model has a unique and easily discoverable name.
 
 As the AI ecosystem grows, so does the number of models and providers. This can make it challenging to keep track of different models, especially when they have similar names or versions.
 
