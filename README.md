@@ -1,31 +1,38 @@
 # CAIMPS: Canonical AI Model and Provider Naming System
 
-CAIMPS is a framework designed to standardize the naming conventions of AI models and their providers. Inspired by existing standards like DNS, OpenRouter, and blockchain naming systems, CAIMPS ensures that AI models are unique, easily discoverable, and structured for interoperability across different platforms.
+CAIMPS stands for Canonical AI Model and Provider Naming System. It's a framework designed to standardize how we name AI models and their providers, making it easier for everyone to find, use, and integrate these models across different platforms. Inspired by systems like DNS (Domain Name System), OpenRouter, and blockchain naming conventions, CAIMPS ensures that every AI model has a unique and easily discoverable name.
 
-## Goals
-- **Uniqueness**: Guarantee unique names for every registered AI model.
-- **Interoperability**: Facilitate easy interaction across various AI service providers.
-- **Discoverability**: Provide a clear system for users to find and identify AI models and their versions.
+## Why CAIMPS?
+As the AI ecosystem grows, so does the number of models and providers. This can make it challenging to keep track of different models, especially when they have similar names or versions. CAIMPS addresses this problem by providing:
 
-## Structure
-CAIMPS follows a hierarchical structure:
+Uniqueness: Every registered AI model has a unique name, eliminating confusion.
+Interoperability: Models can easily interact across various AI service providers.
+Discoverability: Users can quickly find and identify AI models and their specific versions.
+
+## How Does It Work?
+
+CAIMPS uses a simple, hierarchical naming structure:
 
 ```
 [provider/model[:extension][@hosting]]
 ```
 
-- **Provider**: The entity providing the model.
-- **Model**: The name of the model.
-- **Extension (optional)**: Additional tags or variations of the model (e.g., beta, free, extended).
-- **Hosting (optional)**: The platform or repository where the model is hosted (e.g., `huggingface`, `replicate`, `openrouter`).
+Let's break down each component:
 
-### **Examples**:
-- `openai/gpt-4`
-- `google/flan-t5@huggingface`
-- `mistralai/pixtral-12b:free@replicate`
-- `cohere/command-r:beta@openrouter`
+- **Provider**: The organization or individual offering the model (e.g., `openai`, `google`).
+- **Model**: The specific name of the AI model (e.g., `gpt-4`, `gemini-pro`).
+- **Extension (optional)**: Additional tags or variations of the model, such as beta versions or free editions (e.g., `:beta`, `:free`).
+- **Hosting (optional)**: The platform or repository where the model is hosted (e.g., `@huggingface`, `@replicate`).
 
-## Models with CAIMPS Naming
+### Examples
+
+- **`openai/gpt-4`**: The GPT-4 model provided by OpenAI.
+- **`google/flan-t5@huggingface`**: Google's Flan-T5 model hosted on Hugging Face.
+- **`mistralai/pixtral-12b:free@replicate`**: Mistral AI's Pixtral 12B free version hosted on Replicate.
+- **`cohere/command-r:beta@openrouter`**: Cohere's Command R beta version available via OpenRouter.
+
+
+## CAIMPS Naming in Practice
 
 | Model Name                           | Provider                      | CAIMPS Name                                  |
 | ------------------------------------ | ----------------------------- | -------------------------------------------- |
