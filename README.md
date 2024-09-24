@@ -11,7 +11,7 @@ CAIMPS is a framework designed to standardize the naming conventions of AI model
 CAIMPS follows a hierarchical structure:
 
 ```
-[provider/model[:extension]@hosting]
+[provider/model[:extension][@hosting]]
 ```
 
 - **Provider**: The entity providing the model.
